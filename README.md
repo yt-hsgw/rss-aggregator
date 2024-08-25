@@ -1,5 +1,6 @@
 ## 階層
 
+```
 rss_project/
 │
 ├── rss_collector.py        # RSSフィードを収集するメインのコード
@@ -9,6 +10,7 @@ rss_project/
 │   └── workflows/
 │       └── rss_collection.yml  # GitHub Actionsの設定ファイル
 └── README.md                # プロジェクトの説明
+```
 
 ## ローカルで動作を確認する
 
