@@ -47,7 +47,7 @@ env.bak/
 venv.bak/
 
 # rss-urls
-rss_feeds.txt
+#rss_feeds.txt
 
 # output
 articles_*.txt
