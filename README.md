@@ -1,15 +1,31 @@
 ## 階層
 
-```
+```markdown
 rss_project/
 │
-├── rss_collector.py        # RSSフィードを収集するメインのコード
-├── test_rss_collector.py    # ユニットテストコード
-├── requirements.txt         # 必要なPythonライブラリ
+├── src/
+│   ├── __init__.py
+│   ├── rss_collector.py  # RSSフィードの収集ロジック
+│   ├── notion_handler.py # Notion API関連の処理
+│   └── utils.py          # ヘルパー関数（例: ファイル読み込み関数など）
+│
+├── data/
+│   └── rss_feeds.txt     # RSSフィードのURLリストを管理
+│
+├── tests/
+│   ├── test_rss_collector.py  # rss_collector.py のテスト
+│   ├── test_notion_handler.py # notion_handler.py のテスト
+│   └── test_utils.py          # utils.py のテスト
+│
 ├── .github/
 │   └── workflows/
 │       └── rss_collection.yml  # GitHub Actionsの設定ファイル
-└── README.md                # プロジェクトの説明
+|
+├── .gitignore             # 無視するファイルやディレクトリ
+├── requirements.txt       # 必要なパッケージ
+├── README.md              # プロジェクトの概要
+└── notion_publisher.py    # 実行スクリプト
+
 ```
 
 ## ローカルで動作を確認する
