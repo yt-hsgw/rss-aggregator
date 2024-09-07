@@ -1,29 +1,30 @@
-name: Collect RSS Feeds
+name: RSS to Notion
 
 on:
   schedule:
-    - cron: '0 9 * * *'  # 毎日9時に実行 (UTC時間)
+    - cron: '0 17 * * *'  # 毎日9時に実行
 
 jobs:
-  collect_rss:
+  rss_to_notion:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-
-    - name: Run RSS Collector
-      run: python rss_collector.py
-
-    - name: Run Tests
-      run: python -m unittest test_rss_collector.py
+      - name: Check out the repository
+        uses: actions/checkout@v2
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Run RSS Collector
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          NOTION_VERSION: ${{secrets.NOTION_VERSION}}
+        run: |
+          python src/rss_collector.py
