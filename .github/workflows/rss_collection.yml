@@ -26,5 +26,6 @@ jobs:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
           NOTION_VERSION: ${{secrets.NOTION_VERSION}}
+          PYTHONPATH: ${{ github.workspace }}/src
         run: |
           python src/rss_collector.py
