@@ -25,7 +25,7 @@ jobs:
       
       - name: Run RSS Collector
         env:
-          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY_TEST }}
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
           NOTION_VERSION: ${{secrets.NOTION_VERSION}}
         run: |
