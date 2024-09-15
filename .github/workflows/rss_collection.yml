@@ -33,4 +33,4 @@ jobs:
           NOTION_VERSION: ${{secrets.NOTION_VERSION}}
           PYTHONPATH: ${{ github.workspace }}/src
         run: |
-          python src/rss_collector.py
+          python notion_publisher.py
