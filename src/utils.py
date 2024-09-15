@@ -56,7 +56,10 @@ def get_env_variable(key):
     """
     value = os.getenv(key)
     if value is None:
+        print(f"Environment variable {key} is not set.")
         raise ValueError(f"Environment variable {key} is not set.")
+    else:
+        print("get env success")
     return value
 
 def get_random_emoji():
