@@ -74,19 +74,6 @@ def create_notion_page(articles):
             } for article in articles
         ]
     }
-    
-    if NOTION_API_KEY:
-        print("NOTION_API_KEY is set")
-    else:
-        print("NOTION_API_KEY is missing or invalid")
-    if DATABASE_ID:
-        print("DATABASE_ID is set")
-    else:
-        print("DATABASE_ID is missing or invalid")
-    if NOTION_VERSION:
-        print("NOTION_VERSION is set")
-    else:
-        print("NOTION_VERSION is missing or invalid")
         
     response = make_post_request(NOTION_API_URL, headers, notion_page)
     if response:
