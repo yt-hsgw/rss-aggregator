@@ -61,13 +61,7 @@ pip install -r requirements.txt
 ### 実行
 
 ```bash
-python rss_collector.py
-```
-
-### テスト実行
-
-```bash
-python -m unittest test_rss_collector.py
+python notion_publisher.py
 ```
 
 ### 仮想環境の無効化
