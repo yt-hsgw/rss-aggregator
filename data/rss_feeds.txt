@@ -1,13 +1,73 @@
-https://www.cnn.co.jp/rss/
-https://sorae.info/feed
-https://www.gizmodo.jp/index.xml
-https://getnews.jp/feed
-https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml
-https://rss.itmedia.co.jp/rss/2.0/business.xml
-https://gigazine.net/news/rss_2.0/
-https://www.lifehacker.jp/feed/index.xml
-https://wired.jp/rssfeeder/
-https://nazology.net/feed
-https://www.publickey1.jp/atom.xml
-https://automaton-media.com/feed/
-https://coliss.com/feed
+CNN|https://www.cnn.co.jp/rss/
+
+Gizmodo|https://www.gizmodo.jp/index.xml
+
+Sorae|https://sorae.info/feed
+
+GetNews|https://getnews.jp/feed
+
+ITmedia News|https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml
+
+ITmedia Business|https://rss.itmedia.co.jp/rss/2.0/business.xml
+
+GIGAZINE|https://gigazine.net/news/rss_2.0/
+
+Lifehacker|https://www.lifehacker.jp/feed/index.xml
+
+Wired|https://wired.jp/rssfeeder/
+
+Nazology|https://nazology.net/feed
+
+Publickey|https://www.publickey1.jp/atom.xml
+
+Automaton Media|https://automaton-media.com/feed/
+
+Coliss|https://coliss.com/feed
+
+python qiita|https://qiita.com/tags/python/feed
+
+python zenn|https://zenn.dev/topics/python/feed
+
+JavaScript qiita|https://qiita.com/tags/javascript/feed
+
+JavaScript zenn|https://zenn.dev/topics/javascript/feed
+
+TypeScript qiita|https://qiita.com/tags/typescript/feed
+
+TypeScript zenn|https://zenn.dev/topics/typescript/feed
+
+Next.js qiita|https://qiita.com/tags/next.js/feed
+
+Next.js zenn|https://zenn.dev/topics/nextjs/feed
+
+React qiita|https://qiita.com/tags/react/feed
+
+React zenn|https://zenn.dev/topics/react/feed
+
+Docker qiita|https://qiita.com/tags/docker/feed
+
+Docker zenn|https://zenn.dev/topics/docker/feed
+
+AWS qiita|https://qiita.com/tags/aws/feed
+
+AWS zenn|https://zenn.dev/topics/aws/feed
+
+GitHub qiita|https://qiita.com/tags/github/feed
+
+GitHub zenn|https://zenn.dev/topics/github/feed
+
+Git qiita|https://qiita.com/tags/git/feed
+
+Git zenn|https://zenn.dev/topics/git/feed
+
+AI qiita|https://qiita.com/tags/ai/feed
+
+AI zenn|https://zenn.dev/topics/ai/feed
+
+iOS qiita|https://qiita.com/tags/ios/feed
+
+iOS zenn|https://zenn.dev/topics/ios/feed
+
+swift qiita|https://qiita.com/tags/swift/feed
+
+swift zenn|https://zenn.dev/topics/swift/feed

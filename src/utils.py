@@ -4,13 +4,19 @@ from datetime import datetime
 import random
 
 
-def load_rss_feeds(filename):
-    """
-    RSSフィードURLリストをファイルから読み込む関数
-    """
-    with open(filename, 'r') as file:
-        urls = file.read().splitlines()
-    return urls
+def load_rss_feeds(file_path='rss_feeds.txt'):
+    rss_feeds = {}
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            for line in file:
+                if line.strip():  # 空行はスキップ
+                    site_name, url = line.strip().split('|')
+                    rss_feeds[site_name] = url
+    except FileNotFoundError:
+        print("指定されたファイルが見つかりませんでした。")
+    except Exception as e:
+        print(f"RSSフィードの読み込みエラー: {e}")
+    return rss_feeds
 
 def format_date(date_str):
     """
